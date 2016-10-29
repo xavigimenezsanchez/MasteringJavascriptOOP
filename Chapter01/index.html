@@ -28,8 +28,25 @@
             <p>A Refresher of Objects</p>
         </div>
     </div>
+    <pre>
+        <code>
+            function Person(name, surname) {
+                "use strict"
+                this.name = name;
+                this.surname = surname;
+                this.address = "";
+                this.email = "";
+                this.getFullName = function () {
+                    return this.name + " " + this.surname;
+                }
+            }
+        </code>
+    </pre>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="constructors.js"></script>
+    <script type="text/javascript" src="prototypes.js"></script>
+</body>
 </html>
